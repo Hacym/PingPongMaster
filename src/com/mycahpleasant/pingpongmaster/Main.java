@@ -2,6 +2,17 @@ package com.mycahpleasant.pingpongmaster;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Testing");
+        Bracket players = new Bracket();
+
+        players.addPlayer("MyCah");
+        players.addPlayer("Susan");
+
+        if (players.getWins("Susan") > players.getWins("MyCah")) {
+            System.out.println("Susan has more wins than MyCah");
+        } else if (players.getWins("Susan") == players.getWins("MyCah")) {
+            System.out.println("Susan and MyCah have the same number of wins.");
+        } else {
+            System.out.print("MyCah has more wins than Susan");
+        }
     }
 }
