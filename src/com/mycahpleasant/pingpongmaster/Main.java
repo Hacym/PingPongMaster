@@ -6,6 +6,8 @@ public class Main {
 
         players.addPlayer("MyCah");
         players.addPlayer("Susan");
+        players.recordWin("Susan");
+        players.recordLose("MyCah");
 
         if (players.getWins("Susan") > players.getWins("MyCah")) {
             System.out.println("Susan has more wins than MyCah");
